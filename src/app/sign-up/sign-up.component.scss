@@ -1,0 +1,29 @@
+.login-container mat-card{
+    padding: 0px;
+    padding-bottom: 15px !important;
+}
+.login-form{
+    padding: 20px;
+}
+.mat-toolbar{
+    background-color:#e1f2e2;
+    color: #0d210e;
+  }
+  button{
+    background-color:#377057;
+    color:#e1f2e2;
+    margin-top: 10px;
+  }
+  a{
+    color: #377057!important;
+    margin-left: 20px;
+  }
+  .mat-form-field.mat-focused {
+    color: #377057 !important;
+ }
+ ::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: #377057!important;
+}
+::ng-deep.mat-form-field.mat-focused .mat-form-field-ripple{
+    background-color: #377057;
+  }

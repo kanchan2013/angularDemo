@@ -1,0 +1,33 @@
+<h1 mat-dialog-title>Add vendor form</h1>
+<div mat-dialog-content>
+    <form [formGroup]="VendorForm">
+    <mat-form-field appearance="outline">
+        <mat-label>Vendor name</mat-label>
+        <input matInput formControlName="vendorName" placeholder="Enter vendor name">     
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Organization number</mat-label>
+        <input matInput type="number" formControlName="orgnizationNo" placeholder="Enter organization number">     
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email" placeholder="Enter vendor email"  >     
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Contact number</mat-label>
+        <input matInput formControlName="contactNo" placeholder="Enter vendor contact number">     
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Vendor address</mat-label>
+        <input matInput formControlName="address" placeholder="Enter vendor address">     
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Vendor description</mat-label>
+        <textarea matInput formControlName="description" placeholder="Enter vendor description"> </textarea> 
+    </mat-form-field>
+</form>
+</div>
+<div mat-dialog-action [align]="'end'">    
+    <button  mat-raised-button  (click)="addVendor()">{{actionBtn}}</button>
+    <button style="margin-left: 8px" mat-raised-button  mat-dialog-close>Close</button>
+</div> 

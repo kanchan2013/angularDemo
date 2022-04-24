@@ -1,0 +1,66 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "signUpUsers": [
+    {
+      "userName": "kanchan",
+      "email": "abc.xyz@gmail.com",
+      "password": "abc123",
+      "mobile": "0761466134",
+      "id": 1
+    }
+  ],
+  "vendors": [
+    {
+      "vendorName": "Volvo",
+      "orgnizationNo": 884422,
+      "email": "volvo@hotmail.com",
+      "contactNo": "761544193",
+      "address": "Gothenberg",
+      "description": "Automobile",
+      "id": 2
+    },
+    {
+      "vendorName": "H&M",
+      "orgnizationNo": 848937487,
+      "email": "kanchan@gmail.com",
+      "contactNo": "0763455129",
+      "address": "Stockholm",
+      "description": "Clothing and home",
+      "id": 3
+    },
+    {
+      "vendorName": "Nike",
+      "orgnizationNo": 68787,
+      "email": "nike@gmail.com",
+      "contactNo": "0765467567",
+      "address": "Stockholm",
+      "description": "sports",
+      "id": 4
+    },
+    {
+      "vendorName": "adidas",
+      "orgnizationNo": 345435435,
+      "email": "adidas@hotmail.com",
+      "contactNo": "+46761233456",
+      "address": "Solna",
+      "description": "Sports",
+      "id": 5
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

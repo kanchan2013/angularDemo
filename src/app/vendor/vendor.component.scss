@@ -1,0 +1,22 @@
+mat-form-field{
+    width:100%
+}
+::ng-deep.mat-form-field.mat-focused .mat-form-field-ripple{
+    background-color: #377057;
+  }
+  .mat-form-field.mat-focused {
+    color: #377057 !important;
+ }
+ ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline-thin {
+    color: #377057 !important;
+ }
+ ::ng-deep .mat-form-field-appearance-outline.mat-focused .mat-form-field-outline-thick {
+    color: #377057!important;
+}
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: #377057!important;
+}
+button{
+    background-color:#377057;
+    color:#e1f2e2;
+  }

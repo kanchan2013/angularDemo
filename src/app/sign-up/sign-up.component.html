@@ -1,0 +1,33 @@
+<div fxLayoutAlign ="center center" fxFlexFill class="login-container">
+    <mat-card fxFlex = "25"> 
+        <mat-toolbar color="primary">Signup page</mat-toolbar>
+        <form [formGroup]="signUpForm" (ngSubmit)="signUp()" fxLayoutAlign ="stretch" fxLayout ="column" class="login-form" > 
+            <mat-form-field >
+              <input formControlName="userName" matInput placeholder="User name" >
+              <mat-error *ngIf="signUpForm.controls['userName'].hasError('required')">
+                User name is <strong>required</strong>
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field >
+                <input formControlName="mobile" matInput placeholder="Mobile number" >
+                <mat-error *ngIf="signUpForm.controls['mobile'].hasError('required')">
+                  Mobile number is <strong>required</strong>
+                  </mat-error>
+              </mat-form-field>
+              <mat-form-field >
+                <input formControlName="email" matInput placeholder="Email address" >
+                <mat-error *ngIf="signUpForm.controls['email'].hasError('required')">
+                  Email is <strong>required</strong>
+                </mat-error>
+              </mat-form-field>
+            <mat-form-field >
+              <input formControlName="password" matInput type = "password" placeholder="password" >
+              <mat-error *ngIf="signUpForm.controls['password'].hasError('required')">
+                Password is <strong>required</strong>
+              </mat-error>
+            </mat-form-field>
+            <button mat-raised-button type="submit" [disabled]="!signUpForm.valid" > Sign up</button>
+        </form>  
+        <a routerLink="/login">Already registered? Click to sign in.</a>  
+    </mat-card>
+</div>
